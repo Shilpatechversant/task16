@@ -6,8 +6,8 @@
             <cfloop from="1" to="3" index="i">
                 <cfset var local.k=#i#>
                 <cfloop from="1" to="3" index="j">
-                    <cfoutput>#k# &nbsp;</cfoutput>
-                    <cfset k=(#k# + #n# )>
+                    <cfoutput>#local.k# &nbsp;</cfoutput>
+                    <cfset local.k=(#local.k# + #local.n# )>
                 </cfloop>
                 <cfoutput>
                 <br>
